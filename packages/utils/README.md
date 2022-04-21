@@ -1,8 +1,4 @@
-# 🌟 Injective Protocol - TS
-
-_Access Limitless DeFi Markets with Zero Barriers._
-
-## ✨ Features
+# 🌟 Injective Protocol - Utils
 
 ---
 

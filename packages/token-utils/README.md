@@ -1,9 +1,6 @@
-# 🌟 Injective Protocol - TS
+# 🌟 Injective Protocol - Token Utils
 
-_Access Limitless DeFi Markets with Zero Barriers._
-
-## ✨ Features
-
+_Token Utils is a package for querying different data about tokens_
 ---
 
 ## 📚 Getting Started

@@ -1,0 +1,59 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@injectivelabs/ts-types": [
+        "./packages/ts-types"
+      ],
+      "@injectivelabs/exceptions": [
+        "./packages/exceptions"
+      ],
+      "@injectivelabs/utils": [
+        "./packages/utils"
+      ],
+      "@injectivelabs/tx-utils": [
+        "./packages/tx-utils"
+      ],
+      "@injectivelabs/assert": [
+        "./packages/assert"
+      ],
+      "@injectivelabs/web3-strategy": [
+        "./packages/web3-strategy"
+      ],
+      "@injectivelabs/contracts": [
+        "./packages/contracts"
+      ],
+      "@injectivelabs/chain-consumer": [
+        "./packages/chain-consumer"
+      ],
+      "@injectivelabs/exchange-consumer": [
+        "./packages/exchange-consumer"
+      ],
+      "@injectivelabs/derivatives-consumer": [
+        "./packages/derivatives-consumer"
+      ],
+      "@injectivelabs/subaccount-consumer": [
+        "./packages/subaccount-consumer"
+      ],
+      "@injectivelabs/spot-consumer": [
+        "./packages/spot-consumer"
+      ],
+      "@injectivelabs/tokens-metadata": [
+        "./packages/tokens-metadata"
+      ],
+      "@injectivelabs/cosmos-ts": [
+        "./packages/cosmos-ts"
+      ],
+      "@injectivelabs/protocol-stats": [
+        "./packages/protocol-stats"
+      ],
+      "@injectivelabs/referral-consumer": [
+        "./packages/referral-consumer"
+      ],
+      "@injectivelabs/ui-common": [
+        "packages/ui-common"
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "@injectivelabs/ui-common",
+  "description": "Reusable Vue Components, Vuex Store Modules, Composables, and more",
+  "version": "0.5.28",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "dist/types"
+  ],
+  "_moduleAliases": {
+    "~ui-common": "dist"
+  },
+  "scripts": {
+    "postinstall": "shx mkdir -p dist && link-module-alias",
+    "build:watch": "tsc --build -w tsconfig.build.json && link-module-alias",
+    "build": "tsc --build tsconfig.build.json && link-module-alias",
+    "clean": "tsc --build tsconfig.build.json --clean && shx rm -rf coverage *.log junit.xml dist && jest --clearCache",
+    "test": "jest",
+    "test:unit": "jest test/unit",
+    "test:integration": "jest test/unit",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --coverage --ci --reporters='jest-junit'",
+    "coverage": "jest --coverage",
+    "coverage:show": "live-server coverage",
+    "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.8",
+    "@improbable-eng/grpc-web": "^0.15.0",
+    "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
+    "@injectivelabs/alchemy-api": "^0.5.1",
+    "@injectivelabs/chain-api": "^1.7.1",
+    "@injectivelabs/chain-consumer": "^0.5.4",
+    "@injectivelabs/contracts": "^0.5.12",
+    "@injectivelabs/derivatives-consumer": "^0.5.1",
+    "@injectivelabs/exceptions": "^0.5.1",
+    "@injectivelabs/exchange-consumer": "^0.5.2",
+    "@injectivelabs/explorer-consumer": "^0.5.2",
+    "@injectivelabs/networks": "^0.5.2",
+    "@injectivelabs/spot-consumer": "^0.5.1",
+    "@injectivelabs/subaccount-consumer": "^0.5.1",
+    "@injectivelabs/token-metadata": "^0.5.6",
+    "@injectivelabs/token-utils": "^0.5.1",
+    "@injectivelabs/ts-types": "^0.5.1",
+    "@injectivelabs/utils": "^0.5.1",
+    "bech32": "^2.0.0",
+    "date-fns": "^2.28.0",
+    "ethereumjs-util": "^7.1.4",
+    "graphql": "^16.3.0",
+    "link-module-alias": "^1.2.0",
+    "shx": "^0.3.2"
+  },
+  "devDependencies": {
+    "@injectivelabs/web3-strategy": "^0.5.10"
+  },
+  "gitHead": "a12e5c2c5d1038ab42e9669b6eeb1e91873626c2"
+}
